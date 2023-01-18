@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
       <header className="App-header">
@@ -10,15 +9,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-<div>Hello Jenni was here</div>
-          Learn React
-        
+        <div>Hello Jenni was here</div>
+        Learn React!
       </header>
     </div>
   );
-
-    
-
 }
 
 export default App;
