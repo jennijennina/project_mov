@@ -1,26 +1,37 @@
-import logo from "./logo.svg";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Splash from './Pages/Splash'
+import Home from './Pages/Home'
+import Intro from './Pages/Intro'
+import Genres from './Pages/Genres'
+import MovieDetails from './Pages/MovieDetails'
 
 function App() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div>Hello Jenni was here</div>
-        Learn React
+    <section className="App">
 
-        <section>
-          sadasdas
-        </section>
-      </header>
-    </div>
-  );}
+      <BrowserRouter>
+        <Routes>
 
-  
+          <Route path="/" element={<Splash />} />
+
+          <Route path="/intro" element={<Intro />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/genres" element={<Genres />} />
+          <Route path="/genres" element={<Genres />} />
+          <Route path="/movieDetail" element={<MovieDetails />} />
+
+        </Routes>
+      </BrowserRouter>
+
+
+
+    </section>
+  );
+}
+
+
 
 
 export default App;
